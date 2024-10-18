@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const getSalary = (gross) => `Размер заработной платы за вычетом налогов равен ${0.87 * gross}`; 
+
+        const input = prompt('Введите число');
+        if (isNaN(input)) {
+            console.log('Необходимо ввести число');
+        } else {
+            console.log(getSalary(Number(input)));
+        }
+
+    </script>
+</body>
+</html>
